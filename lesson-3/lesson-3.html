@@ -7,12 +7,52 @@
         .star {
             color: red;
         }
+        .otstup {
+            line-height: 1.5;
+        }
     </style>
 </head>
 <body>
     <h2><strong>Форма заявки на работу в зоопарке</strong></h2>
     <p><em>Пожалуйста, заполните форму. Обязательные поля помечены<sup class="star"> *</sup></em></p>
+    <form name="firstform">
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <pre><span class="otstup"><label>Имя<sup class="star"> *</sup></label> <input type="text" required /></span></pre>
+            <p class="otstup"><label>Телефон</label> <input type="text" /></p>
+            <p class="otstup"><label>Email<sup class="star"> *</sup></label> <input type="email" required /></p>
+        </fieldset>
+    </form>
+    <form name="secondform">
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <p class="otstup"><label>Возраст<sup class="star"> *</sup></label> <input type="text" required /></p>
+            <p class="otstup">
+                <label>Пол</label>
+                <select>
+                    <option value="male">Мужчина</option>
+                    <option value="female" selected>Женщина</option>
+                </select>
+            </p>
+            <p class="otstup"><label><span align="left">Перечислите личные качества</span></label> <textarea rows="5" cols="25"></textarea></p>
+        </fieldset>
 
+    </form>
+    <form name="secondform">
+        <fieldset>
+            <legend>Выберите ваших любимых животных</legend>
+            <label for="zebr"><input name="zebr" type="checkbox" />Зебра</label>
+            <label for="koshak"><input name="koshak" type="checkbox" />Кошак</label>
+            <label for="anak"><input name="anak" type="checkbox" />Анаконда</label>
+            <label for="chel"><input name="chel" type="checkbox" />Человек</label> <br />
 
-    </body>
+            <label for="slon"><input name="slon" type="checkbox" />Слон</label>
+            <label for="antil"><input name="antil" type="checkbox" />Антилопа</label>
+            <label for="golub"><input name="golub" type="checkbox" />Голубь</label>
+            <label for="crab"><input name="crab" type="checkbox" />Краб</label>
+
+        </fieldset>
+        </form>
+    <p class="otstup"><input height="30" type="submit" value="Отправить информацию" /></p>
+</body>
 </html>
