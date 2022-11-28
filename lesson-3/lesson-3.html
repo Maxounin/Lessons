@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lesson-3</title>
+    <style>
+        .star {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2><strong>Форма заявки на работу в зоопарке</strong></h2>
+    <p><em>Пожалуйста, заполните форму. Обязательные поля помечены<sup class="star"> *</sup></em></p>
+    <form name="firstform">
+        <fieldset>
+            <legend style="font-size: 24px"><b>Контактная информация</b></legend>
+           <p><label for="name">Имя<sup class="star"> *</sup></label> 
+            <input id="name" style="margin-left: 70px" type="text" required /></p>
+           <p><label for="tele ">Телефон</label> 
+            <input id="tele" style="margin-left: 51px" type="tel" /></p>
+           <p><label for="mail">Email<sup class="star"> *</sup></label>
+            <input id="mail" style="margin-left: 60px" type="email" required /></p>
+        </fieldset>
+    </form>
+    <form name="secondform">
+        <fieldset>
+            <legend style="font-size: 20px"><b>Персональная информация</b></legend>
+            <p><label for="age">Возраст<sup class="star"> *</sup></label>
+            <input id="age" style="margin-left: 45px" type="text" required /></p>
+            <p>
+                <label>Пол</label>
+                <select  style="margin-left: 83px">
+                    <option value="male">Мужчина</option>
+                    <option value="female" selected>Женщина</option>
+                </select>
+            </p>
+            <p><label for="about" style="display: inline-block; vertical-align: top">Перечислите <br />личные<br />качества</label>
+            <textarea id="about" style="margin-left: 22px" width="50%" rows="5" cols="25"></textarea></p>
+        </fieldset>
+
+    </form>
+    <form name="thirdform">
+        <fieldset>
+            <legend style="font-size: 20px"><b>Выберите ваших любимых животных</b></legend>
+            <label style="display: inline-block; vertical-align: top;" for="zebr"><input name="zebr" type="checkbox" />Зебра</label>
+            <label style="margin-left: 48px" for="koshak"><input name="koshak" type="checkbox" />Кошак</label>
+            <label style="margin-left: 73px" for="anak"><input name="anak" type="checkbox" />Анаконда</label>
+            <label style="margin-left: 45px" for="chel"><input name="chel" type="checkbox" />Человек</label> <br />
+
+<p>
+<label for="slon"><input name="slon" type="checkbox" />Слон</label>
+<label style="margin-left: 50px"  for="antil"><input name="antil" type="checkbox" />Антилопа</label>
+<label style="margin-left: 50px" for="golub"><input name="golub" type="checkbox" />Голубь</label>
+<label style="margin-left: 65px" for="crab"><input name="crab" type="checkbox" />Краб</label>
+</p>
+
+        </fieldset>
+        </form>
+    <p><input style="height: 40px" type="submit" value="Отправить информацию" /></p>
+</body>
+</html>
