@@ -10,7 +10,7 @@ div.main {
     border: 1px solid black;
 }
 
-span {
+span.head-span {
     display: inline-block;
     width: 400px;
     height: 42px;
@@ -53,4 +53,29 @@ span.under-head {
     font-size: 16px;
     line-height: 24px;
     color: #505050;
+}
+
+div.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+img.icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+
+    display: inline-block;
+}
+
+div.list {
+    left: 765px;
+    top: 131px;
+    position: absolute;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
 }
