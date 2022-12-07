@@ -3,6 +3,10 @@
     src: url("fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
 }
 
+html{
+    font-size: 1px;
+}
+
 main {
     position: absolute;
     width: 1220px;
@@ -72,7 +76,35 @@ h3 {
     color: #2753A2;
 }
 
-span.desc {
+span.desc1 {
+    margin-top: 192px;
+    position: absolute;
+    width: 350px;
+    height: 195px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20em;
+    line-height: 140%;
+    text-align: center;
+    color: #222222;
+}
+
+span.desc2 {
+    margin-top: 192px;
+    position: absolute;
+    width: 350px;
+    height: 195px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20rem;
+    line-height: 140%;
+    text-align: center;
+    color: #222222;
+}
+
+span.desc3 {
     margin-top: 192px;
     position: absolute;
     width: 350px;
@@ -86,8 +118,6 @@ span.desc {
     color: #222222;
 }
 
-
-
 svg{
     margin-top: 50px;
 }
@@ -99,4 +129,3 @@ section:nth-child(2){
 section:nth-child(3){
     margin-left: 25px;
 }
-
