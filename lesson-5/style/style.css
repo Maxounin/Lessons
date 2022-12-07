@@ -9,7 +9,7 @@ main {
     height: 669px;
 }
 
-figcaption {
+p {
     position: absolute;
     text-align: center;
     width: 1160px;
@@ -19,12 +19,17 @@ figcaption {
     font-weight: 700;
     font-size: 40px;
     line-height: 49px;
-    color: #2753A2;
+    color: #E31E24;
     margin-bottom: 20px;
+    display: inline-block;
+    margin-top: 0;
 }
 
+span {
+    color: #2753A2 ;
+}
 
-span{
+span.sub{
     margin-left: 223px;
     margin-top:69px;
     position: absolute;
@@ -68,8 +73,8 @@ h3 {
 }
 
 span.desc {
-    margin: 0;
     margin-top: 192px;
+    position: absolute;
     width: 350px;
     height: 195px;
     font-family: 'Montserrat';
@@ -77,6 +82,7 @@ span.desc {
     font-weight: 500;
     font-size: 20px;
     line-height: 140%;
+    text-align: center;
     color: #222222;
 }
 
@@ -93,3 +99,4 @@ section:nth-child(2){
 section:nth-child(3){
     margin-left: 25px;
 }
+
