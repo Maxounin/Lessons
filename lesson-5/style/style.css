@@ -8,13 +8,11 @@ html{
 }
 
 section {
-    position: absolute;
     width: 1220px;
     height: 669px;
 }
 
 p {
-    position: absolute;
     text-align: center;
     width: 1160px;
     height: 49px;
@@ -33,12 +31,10 @@ span {
     color: #2753A2 ;
 }
 
-span.sub{
-    margin-left: 223px;
-    margin-top:69px;
-    position: absolute;
+div.sub {
+    margin-left: auto;
+    margin-right: auto;
     width: 773px;
-    height: 62px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -49,10 +45,10 @@ span.sub{
 }
 
 div.articles{
-    margin-top: 196px;
-    display: inline-flex;
+    margin-top: 65px;
+    display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-content: flex-end;
 }
 
 article{
@@ -61,13 +57,10 @@ article{
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(39, 83, 162, 0.25);
     border-radius: 10px;
-    display: flex;
-    justify-content:center;
+    text-align: center;
 }
 
 h3 {
-    margin-top: 150px;
-    position: absolute;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -78,7 +71,6 @@ h3 {
 
 span.desc1 {
     margin-top: 192px;
-    position: absolute;
     width: 350px;
     height: 195px;
     font-family: 'Montserrat';
@@ -92,7 +84,6 @@ span.desc1 {
 
 span.desc2 {
     margin-top: 192px;
-    position: absolute;
     width: 350px;
     height: 195px;
     font-family: 'Montserrat';
@@ -106,7 +97,6 @@ span.desc2 {
 
 span.desc3 {
     margin-top: 192px;
-    position: absolute;
     width: 350px;
     height: 195px;
     font-family: 'Montserrat';
