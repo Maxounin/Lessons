@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-regular.ttf") format("truetype");
+}
+
+*{
+    margin: 0;
+}
+
+div.main {
+    width: 1280px;
+    height: 668px;
+    background: #F2F8F6;
+    position: relative;
+}
+
+div.wh_square {
+    position: relative;
+    width: 446.67px;
+    height: 437.32px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    left: 160px;
+    top: 67.28px;
+    display: inline-block;
+}
+
+div.gr_square {
+    position: absolute;
+    width: 446.67px;
+    height: 437.32px;
+    border: 20px solid #3D8455;
+    border-radius: 2px;
+    left: 33.33px;
+    top: 48.06px;
+    text-align: center;
+}
+
+header {
+    width: 411px;
+    height: 57px;
+    font-family: 'Roboto';
+    font-size: 50px;
+    font-weight: 500; 
+    margin-bottom: 19px;
+}
+
+div.info{
+    position: absolute;
+    top: 115px;
+    width: 550px;
+    display: inline-block;
+    margin-left: 270px;
+}
+
+p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #26292E;
+}
+
+ul {
+    padding: 11px;
+    font-family: 'Roboto';
+    margin-top: 23px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #26292E;
+    list-style-type: none;
+    margin-bottom: 38px;
+}
+
+li::marker{
+    content: url(Vector.png);
+}
+
+button {
+    width: 211px;
+    height: 57.67px;
+    background: #408858;
+    border-radius: 2px;
+    border: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;  
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+img{
+    position:absolute;
+    bottom: -54.79px;
+    left: 112px;
+}
