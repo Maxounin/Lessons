@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
 }
 
 html{
     font-size: 1px;
 }
 
-main {
+section {
     position: absolute;
     width: 1220px;
     height: 669px;
@@ -55,7 +55,7 @@ div.sections{
     align-items: flex-end;
 }
 
-section {
+article{
     width: 390px;
     height: 473px;
     background: #FFFFFF;
@@ -122,10 +122,10 @@ svg{
     margin-top: 50px;
 }
 
-section:nth-child(2){
+article:nth-child(2){
     margin-left: 25px;
 }
 
-section:nth-child(3){
+article:nth-child(3){
     margin-left: 25px;
 }
