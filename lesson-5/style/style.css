@@ -77,10 +77,10 @@ h3 {
 }
 
 span.desc1 {
-    margin-top: 192em;
+    margin-top: 192px;
     position: absolute;
-    width: 350em;
-    height: 195em;
+    width: 350px;
+    height: 195px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -91,10 +91,10 @@ span.desc1 {
 }
 
 span.desc2 {
-    margin-top: 192rem;
+    margin-top: 192px;
     position: absolute;
-    width: 350rem;
-    height: 195rem;
+    width: 350px;
+    height: 195px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
