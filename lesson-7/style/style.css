@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Gilroy';
-    src: url('Gilroy-Regular.ttf') format('truetype');
+    src: url('../fonts/Gilroy-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: 500;
 }
@@ -14,6 +14,7 @@ ul{
     list-style-type: none;
     justify-content: space-between;
     align-content: space-between;
+    font-family: 'Gilroy', sans-serif;
 }
 
 li{
@@ -28,19 +29,36 @@ li{
 }
 
 h4{
-
+    font-weight: 600;
+    font-size: 22px;
 }
 
 span{
-
+    width: 380px;
+    font-size: 14px;
+    text-align: center;
 }
 
 .price{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-top: auto;
+    font-size: 22px;
+    font-weight: 600;
 }
 
-button{
-
+button {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    width: 200px;
+    height: 70px;
+    background: #E31E24;
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: 44px;
 }
