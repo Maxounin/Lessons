@@ -107,7 +107,7 @@ img{
     margin-right: 15px;
 }
 
-.pages_item:nth_child(2){
+.pages_item:nth-child(2){
     color: #FFF;
     background-color: #E31E24;
 }
