@@ -32,12 +32,14 @@ figcaption{
 .man{
     width:440px;
     height: 583px;
+    margin-top: 95px;
 }
 
 .list {
     width: 600px;
     box-shadow: 0 0 4px #C7C7C7;
     border-radius: 5px;
+    width: 920px;
 }
 
 .item {
@@ -50,6 +52,7 @@ figcaption{
 
 .title{
     margin-left: 30px;
+    width: 852px;
 }
 
 .desc{
