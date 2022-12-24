@@ -46,7 +46,7 @@ header {
     margin-bottom: 129px;
 }
 
-.logo-nav{
+.logo-nav {
     display: flex;
 }
 
@@ -54,12 +54,12 @@ header {
     margin-right: 32px;
 }
 
-nav { 
+nav {
     width: 372px;
     margin-right: 178px;
 }
 
-.nav {
+.nav, .menu {
     margin-right: 30px;
 }
 
@@ -75,7 +75,11 @@ nav {
 .links {
     justify-content: space-between;
     font-size: 20px;
-    margin-right:278px;
+    margin-right: 278px;
+}
+
+.menu{
+    display: none;
 }
 
 .social-media {
@@ -99,7 +103,6 @@ nav {
 }
 
 .wallet-text {
-    
 }
 
 .wallet:hover {
@@ -165,14 +168,45 @@ mark {
 
 @media (max-width: 1300px) {
     header {
-        height: 100px;
+        height: auto;
+        margin-left: 100px;
+        margin-right: 100px;
     }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu {
+        display: initial;
+    }
+
+    nav {
+        margin-right: 0;
+        width: 250px;
+    }
+
+    .nav{
+        font-size: 30px;
+    }
+
+    .links:first-child {
+        display:initial;
+    }
+
     .logo-nav {
         display: block;
+        height: 80px;
+        overflow: hidden;
+    }
+
+    .logo-nav:hover{
+        overflow: initial;
     }
 
     .logo {
-        margin-bottom: 20px;
+        height: 40px;
     }
 
     .wallet-text {
@@ -185,7 +219,16 @@ mark {
         display: block;
     }
 
+    .social-media {
+        margin: 0 100px 0 50px;
+    }
+
     .wallet {
         padding: 13px 12px;
+    }
+
+    .sm{
+        width: 50px;
+        height: 50px;
     }
 }
