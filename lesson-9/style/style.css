@@ -1,17 +1,26 @@
 @font-face {
     font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
     font-style: normal;
     font-weight: 400;
 }
 
-*{
-    list-style:none;
+@font-face {
+    font-family: 'Candal';
+    src: url('../fonts/Candal/Candal-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    list-style: none;
     padding: 0;
     margin: 0;
-    outline:none;
+    outline: none;
     border: none;
-    font-family: Montserrat, sans-serif;
+    background-color: transparent;
+    text-decoration: none;
+    color: #cbcbcb;
 }
 
 .wrap {
@@ -22,16 +31,19 @@
     background-image: url(../images/bg.png);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
 
-header{
+header {
+    font-family: Montserrat, sans-serif;
     display: flex;
     width: 1300px;
-    height:65px;
+    height: 65px;
     border-bottom: 1px solid #fff;
     align-items: center;
+    margin-bottom: 129px;
 }
 
 .logo{
@@ -72,9 +84,69 @@ nav{
 
 .wallet{
     border: 1px solid #fff;
-    width: 240px;
-    height: 50px;
     color: #fff;
-    background-color: transparent;
     font: 300 20px/24px Montserrat, sans-serif;
+    text-align: center;
+    padding: 13px 24.5px;
+}
+
+.wallet:hover{
+    cursor: pointer;
+}
+
+.motto{
+    font: italic 300 14px/130% Montserrat, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h1 {
+    text-align: center;
+    font: 400 60px/130% Candal, sans-serif;
+    color: #FFF;
+    text-shadow: 0 5px 50px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+}
+
+mark {
+    color: #ff4c24;
+}
+
+.desc{
+    font: 300 20px/130% Montserrat, sans-serif;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.whlist, .mint {
+    font: 400 30px/30px Montserrat, sans-serif;
+    display: inline-block;
+    text-align: center;
+}
+
+.whlist {
+    background: rgba(255, 76, 36, 0.15);
+    border: 1px solid #FF4C24;
+    backdrop-filter: blur(10px);
+    color: #ff4c24;
+    padding: 14px 71px;
+    margin-right: 20px
+}
+
+.mint {
+    color: #000;
+    background: #59FFB7;
+    padding: 14px 60px;
+}
+
+.mist {
+    position: absolute;
+    top: 750px;
+    left: 209px;
+    width: 1300px;
+    height: 260px;
+    background: linear-gradient(180deg, rgba(32, 255, 215, 0.4) 0%, rgba(237, 255, 32, 0.4) 100%);
+    filter: blur(250px);
 }
