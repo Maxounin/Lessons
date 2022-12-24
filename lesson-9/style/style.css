@@ -24,11 +24,12 @@
 }
 
 .wrap {
+    overflow: hidden;
     color: #cbcbcb;
-    max-width: 1718px;
     height: 894px;
     background-color: #1e1e1e;
     background-image: url(../images/bg.png);
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -39,50 +40,53 @@
 header {
     font-family: Montserrat, sans-serif;
     display: flex;
-    width: 1300px;
     height: 65px;
     border-bottom: 1px solid #fff;
     align-items: center;
     margin-bottom: 129px;
 }
 
-.logo{
+.logo-nav{
+    display: flex;
+}
+
+.logo {
     margin-right: 32px;
 }
 
-nav{
+nav { 
     width: 372px;
     margin-right: 178px;
 }
 
-.nav{
+.nav {
     margin-right: 30px;
 }
 
-.links, .social-media{
+.links, .social-media {
     display: flex;
     color: #cbcbcb;
 }
 
-.sm-item{
+.sm-item {
     margin-right: 15px;
 }
 
-.links{
+.links {
     justify-content: space-between;
     font-size: 20px;
     margin-right:278px;
 }
 
-.social-media{
+.social-media {
     width: 145px;
 }
 
-.male{
+.male {
     margin: 0 20px 0 55px;
 }
 
-.wallet{
+.wallet {
     border: 1px solid #fff;
     color: #fff;
     font: 300 20px/24px Montserrat, sans-serif;
@@ -90,11 +94,19 @@ nav{
     padding: 13px 24.5px;
 }
 
-.wallet:hover{
+.wallet-icon {
+    display: none;
+}
+
+.wallet-text {
+    
+}
+
+.wallet:hover {
     cursor: pointer;
 }
 
-.motto{
+.motto {
     font: italic 300 14px/130% Montserrat, sans-serif;
     display: flex;
     justify-content: center;
@@ -114,7 +126,7 @@ mark {
     color: #ff4c24;
 }
 
-.desc{
+.desc {
     font: 300 20px/130% Montserrat, sans-serif;
     text-align: center;
     margin-bottom: 100px;
@@ -149,4 +161,31 @@ mark {
     height: 260px;
     background: linear-gradient(180deg, rgba(32, 255, 215, 0.4) 0%, rgba(237, 255, 32, 0.4) 100%);
     filter: blur(250px);
+}
+
+@media (max-width: 1300px) {
+    header {
+        height: 100px;
+    }
+    .logo-nav {
+        display: block;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .wallet-text {
+        display: none;
+    }
+
+    .wallet-icon {
+        width: 20px;
+        height: 17px;
+        display: block;
+    }
+
+    .wallet {
+        padding: 13px 12px;
+    }
 }
