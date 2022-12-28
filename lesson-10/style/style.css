@@ -25,7 +25,6 @@
     background: #bdb76b;
     border-radius: 50%;
     transform: translateY(-130px);
-    transform-origin: 50%;
     animation: bounce 0.5s alternate infinite ease-in;
 }
 
