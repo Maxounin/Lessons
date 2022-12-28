@@ -5,3 +5,61 @@
     font-display: swap;
     font-weight: 400;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.preloader-wrap {
+    position: relative;
+}
+
+.preloader-ball {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: #bdb76b;
+    border-radius: 50%;
+    transform: translateY(-130px);
+    transform-origin: 50%;
+    animation: bounce 0.5s alternate infinite ease-in;
+}
+
+.preloader-text {
+    margin-left: 20px;
+    color: #bdb76b;
+    font: 700 20px 'Montserrat', sans-serif;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-130px);
+    }
+
+    70% {
+        transform: translateY(5px);
+    }
+
+    90% {
+        transform: translateY(5px) scale(2, 0.5);
+    }
+
+    100% {
+        transform: translateY(5px) scale(2, 0.5);
+        border-radius: 48% 52% 12% 12% / 62% 56% 12% 10%;
+    }
+}
