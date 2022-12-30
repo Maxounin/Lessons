@@ -182,7 +182,7 @@ footer {
 
 @media (max-width: 1130px) {
     body {
-        grid-template-columns: 1vw 1fr 1vw;
+        grid-template-columns: 3vw 1fr 3vw;
     }
 }
 
@@ -196,12 +196,14 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
+    body {
+        grid-template-columns: 1vw 1fr 1vw;
+    }
+}
+
+@media (max-width: 781px) {
     .wrapper {
         grid-template-columns: 1fr 75%;
-    }
-
-    main {
-        justify-content: space-around;
     }
 }
