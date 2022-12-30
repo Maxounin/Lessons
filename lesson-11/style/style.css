@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #FFF;
+}
+
+body {
+    background-color: #1B222E;
+
+}
+
+main {
+    width: 1016px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+}
+
+.rate-bar:before {
+    content: attr(data-rate);
+    position: absolute;
+    left: -47px;
+    top: -6px;
+    font: 700 12px/17px 'Open Sans', sans-serif;
+    color: #FFF;
+}
+
+.product {
+    width: 232px;
+    height: 417px;
+    position: relative;
+    background: #262A3E;
+    border-radius: 6px;
+    border: 1px solid #262A3E;
+    box-sizing: border-box;
+}
+
+.img-caption {
+    position: absolute;
+    top: 154px;
+    background: #A782E926;
+    width: 157px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 400 11px/16px 'Open Sans', sans-serif;
+    color: #A782E9;
+    margin-left: 16px;
+}
+
+.product-info {
+    padding: 0 16px 16px 16px;
+}
+
+.product-name {
+    font: 600 18px/22px 'Open Sans', sans-serif;
+    margin-bottom: 4px;
+}
+
+.product-desc, .product-price-rec{
+    font: 400 13px/17px 'Open Sans', sans-serif;
+    color: #83878F;
+    margin-bottom: 16px;
+}
+
+.product-price {
+    font: 700 24px/24px 'Open Sans', sans-serif;
+    margin-bottom: 5px;
+}
+
+.rate-wrap {
+    bottom: 82px;
+    right: 16px;
+    position: absolute;
+}
+
+.to-cart {
+    position: absolute;
+    bottom: 16px;
+    width: 200px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #29B474;
+    border-radius: 6px;
+    font: 600 11px/20px 'Open Sans', sans-serif;
+}
