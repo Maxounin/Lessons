@@ -1,5 +1,5 @@
-let firstName = prompt('Please, enter your firstname');
-let lastName = prompt('Please, enter your lastname');
+let firstName = prompt('Please, enter your first name');
+let lastName = prompt('Please, enter your last name');
 let age = +prompt('Please, enter your age');
 let genderState = confirm('Are you a male?');
 let pensionState;
@@ -20,4 +20,4 @@ if (genderState == true) {
 } else {
   gender = 'Female';
 }
-alert(`Name: ${firstName} \nSurname: ${lastName} \nAge: ${age} \nGender: ${gender} \nPension: ${pension}`);
+alert(`First name: ${firstName} \nLast name: ${lastName} \nAge: ${age} \nGender: ${gender} \nPension: ${pension}`);
