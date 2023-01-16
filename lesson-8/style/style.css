@@ -1,0 +1,99 @@
+@font-face{
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+*{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.questions{
+    width:1400px;
+    height:678px;
+    font-family: 'Gilroy', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font: 600 35px/1.2 'Gilroy', sans-serif;
+    margin-bottom: 60px;
+}
+
+.man{
+    width:440px;
+    height: 583px;
+    margin-top: 95px;
+}
+
+.list {
+    width: 600px;
+    box-shadow: 0 0 4px #C7C7C7;
+    border-radius: 5px;
+    width: 920px;
+}
+
+.item {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #C7C7C7;
+    font: 600 20px/1.1 Gilroy, sans-serif;
+    line-height: 70px;
+}
+
+.title{
+    margin-left: 30px;
+    width: 852px;
+}
+
+.desc{
+    font-size: 17px;
+    line-height: 110%;
+    font-weight: 400;
+    margin-left: 50px;
+}
+
+span {
+    line-height: 40px;
+    display: inline-block;
+}
+
+.wrap {
+    height: 70px;
+    overflow: hidden;
+}
+
+input {
+    display: none;
+}
+
+input:checked + .wrap {
+	--x: 180deg;
+    height: auto;
+}
+
+.list:last-child{
+    border:none;
+}
+
+.wrap:hover{
+    cursor:pointer;
+}
+
+.man{
+    width: 440px;
+    height: 583px;
+}
+
+svg{
+	transform: rotate(var(--x));
+}

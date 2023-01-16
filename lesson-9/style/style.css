@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Candal';
+    src: url('../fonts/Candal/Candal-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    color: #cbcbcb;
+}
+
+.wrap {
+    overflow: hidden;
+    color: #cbcbcb;
+    height: 894px;
+    background-color: #1e1e1e;
+    background-image: url(../images/bg.png);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+header {
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    height: 65px;
+    border-bottom: 1px solid #fff;
+    align-items: center;
+    margin-bottom: 129px;
+}
+
+.logo-nav {
+    display: flex;
+}
+
+.logo {
+    margin-right: 32px;
+}
+
+nav {
+    width: 372px;
+    margin-right: 178px;
+}
+
+.nav, .menu {
+    margin-right: 30px;
+}
+
+.links, .social-media {
+    display: flex;
+    color: #cbcbcb;
+}
+
+.sm-item {
+    margin-right: 15px;
+}
+
+.links {
+    justify-content: space-between;
+    font-size: 20px;
+    margin-right: 278px;
+}
+
+.menu{
+    display: none;
+}
+
+.social-media {
+    width: 145px;
+}
+
+.male {
+    margin: 0 20px 0 55px;
+}
+
+.wallet {
+    border: 1px solid #fff;
+    color: #fff;
+    font: 300 20px/24px Montserrat, sans-serif;
+    text-align: center;
+    padding: 13px 24.5px;
+}
+
+.wallet-icon {
+    display: none;
+}
+
+.wallet-text {
+}
+
+.wallet:hover {
+    cursor: pointer;
+}
+
+.motto {
+    font: italic 300 14px/130% Montserrat, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h1 {
+    text-align: center;
+    font: 400 60px/130% Candal, sans-serif;
+    color: #FFF;
+    text-shadow: 0 5px 50px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+}
+
+mark {
+    color: #ff4c24;
+}
+
+.desc {
+    font: 300 20px/130% Montserrat, sans-serif;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.whlist, .mint {
+    font: 400 30px/30px Montserrat, sans-serif;
+    display: inline-block;
+    text-align: center;
+}
+
+.whlist {
+    background: rgba(255, 76, 36, 0.15);
+    border: 1px solid #FF4C24;
+    backdrop-filter: blur(10px);
+    color: #ff4c24;
+    padding: 14px 71px;
+    margin-right: 20px
+}
+
+.mint {
+    color: #000;
+    background: #59FFB7;
+    padding: 14px 60px;
+}
+
+.mist {
+    position: absolute;
+    top: 750px;
+    left: 209px;
+    width: 1300px;
+    height: 260px;
+    background: linear-gradient(180deg, rgba(32, 255, 215, 0.4) 0%, rgba(237, 255, 32, 0.4) 100%);
+    filter: blur(250px);
+}
+
+@media (max-width: 1300px) {
+    header {
+        height: auto;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu {
+        display: initial;
+    }
+
+    nav {
+        margin-right: 0;
+        width: 250px;
+    }
+
+    .nav{
+        font-size: 30px;
+    }
+
+    .links:first-child {
+        display:initial;
+    }
+
+    .logo-nav {
+        display: block;
+        height: 80px;
+        overflow: hidden;
+    }
+
+    .logo-nav:hover{
+        overflow: initial;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .wallet-text {
+        display: none;
+    }
+
+    .wallet-icon {
+        width: 20px;
+        height: 17px;
+        display: block;
+    }
+
+    .social-media {
+        margin: 0 100px 0 50px;
+    }
+
+    .wallet {
+        padding: 13px 12px;
+    }
+
+    .sm{
+        width: 50px;
+        height: 50px;
+    }
+}

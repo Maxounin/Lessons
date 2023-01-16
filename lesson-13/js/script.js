@@ -6,18 +6,18 @@ let pensionState;
 let pension;
 let gender;
 if ((genderState == true && age >= 65) || (genderState == false && age >=60)) {
-    pensionState = true;
+  pensionState = true;
 } else {
-    pensionState = false;
+  pensionState = false;
 }
 if (pensionState == true) {
-    pension = 'Yes';
+  pension = 'Yes';
 } else {
-    pension = 'No';
+  pension = 'No';
 }
 if (genderState == true) {
-    gender = 'Male';
+  gender = 'Male';
 } else {
-    gender = 'Female';
+  gender = 'Female';
 }
 alert(`First name: ${firstName} \nLast name: ${lastName} \nAge: ${age} \nGender: ${gender} \nPension: ${pension}`);
