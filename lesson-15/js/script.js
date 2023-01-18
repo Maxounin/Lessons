@@ -1,27 +1,20 @@
-let sum = 0;
-
-function sumInput() {
+function sumInput(sum = 0) {
     
     let arr = [];
-    let i;
+    let i = 0;
 
     do {
         i = prompt('enter');
         arr.push(i);
-    } while(!(i === "" || i === null));
+    } while(!(i === "" || i === null || !isFinite(i)));
 
-    //for (let i = 0; i < arr.length; i++) {
-    //    sum += +arr[i];
-    //}
+    let odd = arr.length - 2;
 
-    for (let  of arr) {
-        
+    for(let i = 0; i <= odd; i++) {
+        sum += +arr[i];
     }
-    
+
+    alert(sum);
 }
 
 sumInput();
-
-
-
-console.log(sum);
