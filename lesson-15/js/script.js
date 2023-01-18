@@ -1,16 +1,16 @@
 function sumInput(sum = 0) {
     
     let arr = [];
-    let i = 0;
+    let num = 0;
 
     do {
-        i = prompt('enter');
-        arr.push(i);
-    } while(!(i === "" || i === null || !isFinite(i)));
+        num = prompt('enter');
+        arr.push(num);
+    } while(!(num === "" || num === null || !isFinite(num)));
 
-    let odd = arr.length - 2;
+    let invalid = arr.length - 2;
 
-    for(let i = 0; i <= odd; i++) {
+    for(let i = 0; i <= invalid; i++) {
         sum += +arr[i];
     }
 
