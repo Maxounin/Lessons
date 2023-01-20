@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    font: 400 14px 'Arial', sans-serif;
+}
+
+.text {
+    height: 30px;
+    width: 200px;
+    border-radius: 6px;
+    background: #cbcbcb;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+label {
+    font-size: 10px;
+}
