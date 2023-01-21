@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-<form action="" method="post">
-    <input type="text" placeholder="Введите ваше имя" class="text">
-    <input type="text" placeholder="Введите ваш номер телефона" class="text number">
-    <label><input type="checkbox">Я с согласен с <a href="#">политикой конфиденциальности</a> и <a href="#">условиями пользования</a></label>
+<form action="" method="post" id="validation">
+    <input type="text" placeholder="Введите ваше имя" class="inp inp-name">
+    <input type="text" placeholder="Введите ваш номер телефона" class="inp inp-phone">
+    <label>
+        <input type="checkbox" class="inp check">Я с согласен с <a href="#">политикой конфиденциальности</a> и <a href="#">условиями пользования</a></label>
+    <input type="submit" class="submit">
 </form>
 <script src="js/script.js"></script>
 </body>

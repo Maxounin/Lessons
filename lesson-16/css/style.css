@@ -7,21 +7,18 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 300px;
     height: 200px;
     font: 400 14px 'Arial', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.text {
-    height: 30px;
-    width: 200px;
-    border-radius: 6px;
+.inp-name, .inp-phone, .submit {
+    height: 40px;
     background: #cbcbcb;
-}
-
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-label {
-    font-size: 10px;
+    border: #FFF;
+    border-radius: 4px;
 }
